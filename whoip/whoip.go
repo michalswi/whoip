@@ -5,7 +5,7 @@ import (
 	"net"
 )
 
-func whoip(domainName, NSserver string) string {
+func WHOip(domainName, NSserver string) string {
 	conn, err := net.Dial("tcp", NSserver+":43")
 	if err != nil {
 		log.Fatalf("Error: %s", err.Error())

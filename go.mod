@@ -1,3 +1,3 @@
-module github.com/michalswi/whoip
+module github.com/michalswi/whoipis
 
 go 1.15
