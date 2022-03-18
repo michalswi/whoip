@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/michalswi/whoipis/whoip"
+	"github.com/michalswi/whoisgo/whois"
 )
 
 func main() {
@@ -19,9 +19,9 @@ func main() {
 		switch tldResult {
 		// https://www.nirsoft.net/whois-servers.txt
 		case "com":
-			result = whoip.WHOip(os.Args[1], "whois.verisign-grs.com")
+			result = whois.WHOip(os.Args[1], "whois.verisign-grs.com")
 		case "pl":
-			result = whoip.WHOip(os.Args[1], "whois.dns.pl")
+			result = whois.WHOip(os.Args[1], "whois.dns.pl")
 		}
 	}
 	fmt.Println(result)

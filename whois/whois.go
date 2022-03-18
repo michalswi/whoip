@@ -1,4 +1,4 @@
-package whoip
+package whois
 
 import (
 	"log"
