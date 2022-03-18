@@ -19,9 +19,9 @@ func main() {
 		switch tldResult {
 		// https://www.nirsoft.net/whois-servers.txt
 		case "com":
-			result = whois.WHOip(os.Args[1], "whois.verisign-grs.com")
+			result = whois.WHOis(os.Args[1], "whois.verisign-grs.com")
 		case "pl":
-			result = whois.WHOip(os.Args[1], "whois.dns.pl")
+			result = whois.WHOis(os.Args[1], "whois.dns.pl")
 		}
 	}
 	fmt.Println(result)
