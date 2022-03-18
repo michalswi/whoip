@@ -13,7 +13,7 @@ import (
 func main() {
 	var result string
 	if len(os.Args) < 2 {
-		log.Fatalf("Missing arg with URL, e.g. `whoip google.com`")
+		log.Fatalf("Missing arg with URL, e.g. `whois google.com`")
 	} else {
 		tldResult := tld(os.Args[1])
 		switch tldResult {
